@@ -15,9 +15,9 @@ namespace Itofinity.Refit.Cli.Utils
 
         T GetClient();
 
-        T GetClient(string securityToken);
+        T GetClient(string scheme, string securityToken);
 
-        T GetClient(string apiUrl, string securityToken);
+        T GetClient(string apiUrl, string scheme, string securityToken);
 
         T GetClient(string apiUrl, Func<Task<Tuple<string, string>>> getSchemeAndToken);
 

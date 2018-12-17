@@ -37,10 +37,26 @@ namespace Itofinity.Refit.Cli.Utils
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                LogException(ex, 0);
             }
 
             return 0;
+        }
+
+        public static void LogException(Exception ex, int level)
+        {
+            Console.WriteLine($"{new String('.', level)} {ex.Message}");
+            if (ex is AggregateException)
+            {
+                var aex = ex as AggregateException;
+                foreach (var aexInnerException in aex.InnerExceptions)
+                {
+                    LogException(aexInnerException, level+1);
+                }
+            } else if (ex.InnerException != null)
+            {
+                LogException(ex.InnerException, level+1);
+            }
         }
 
         private static void ConfigureLogging(CommandOption logLocationOption, CommandOption logVerbosityOption)

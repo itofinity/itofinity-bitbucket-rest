@@ -13,8 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Itofinity.Bitbucket.Cli.Ext\Itofinity.Bitbucket.Cli.Ext.csproj" />
-    <ProjectReference Include="..\Itofinity.Bitbucket.Refit\Itofinity.Bitbucket.Refit.csproj" />
+      <ProjectReference Include="..\Itofinity.Bitbucket.Refit\Itofinity.Bitbucket.Refit.csproj" />
     <ProjectReference Include="..\Itofinity.Cli.Utils\Itofinity.Refit.Cli.Utils.csproj" />
   </ItemGroup>
 </Project>

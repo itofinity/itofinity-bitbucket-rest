@@ -16,20 +16,22 @@ namespace Itofinity.Bitbucket.Cli
 
         public Type ClientType => typeof(ApiClient);
 
-        public const string CanonicalApiUrl = "https://api.bitbucket.org/";
+        public const string CanonicalApiUrl = "https://api.bitbucket.org/2.0";
 
         public ApiClient GetClient()
         {
-            return GetClient(null);
+            return GetClient((string)null, (string)null);
         }
 
-        public ApiClient GetClient(string securityToken)
+        public ApiClient GetClient(string auth, string securityToken)
         {
             return GetClient(CanonicalApiUrl, securityToken);
         }
 
-        public ApiClient GetClient(string apiUrl, string securityToken)
+        public ApiClient GetClient(string apiUrl, string scheme, string securityToken)
         {
+            var urlToUse = apiUrl ?? Environment.GetEnvironmentVariable("BITBUCKET_API_URL") ?? CanonicalApiUrl;
+            var schemeToUse = scheme ?? Environment.GetEnvironmentVariable("BITBUCKET_API_AUTH") ?? "Bearer";
             var tokenToUse = securityToken ?? Environment.GetEnvironmentVariable("BITBUCKET_API_TOKEN");
 
             if (string.IsNullOrWhiteSpace(tokenToUse))
@@ -38,9 +40,9 @@ namespace Itofinity.Bitbucket.Cli
                 // TODO for not continue and fail, possibly fail early here?
             }
 
-            return GetClient(apiUrl, () =>
+            return GetClient(urlToUse, () =>
             {
-                return Task.FromResult(new Tuple<string, string>("Basic", tokenToUse));
+                return Task.FromResult(new Tuple<string, string>(schemeToUse, tokenToUse));
             });
         }
 

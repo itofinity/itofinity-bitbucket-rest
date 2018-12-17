@@ -1,7 +1,6 @@
 ﻿using Itofinity.Bitbucket.Refit.Client;
 using Itofinity.Refit.Cli.Utils;
 using Itofinity.Refit.Cli.Utils.Commands;
-using Itofinity.Refit.Cli.Utils.Options.Command;
 using Itofinity.Refit.Cli.Utils.Options.Global;
 using Microsoft.Extensions.CommandLineUtils;
 using System.Collections.Generic;
@@ -43,6 +42,17 @@ namespace Itofinity.Bitbucket.Cli
                             apiToken.Description,
                             apiToken.OptionType);
 
+                        var scheme = new Scheme();
+                        var schemeOption = command.Option(scheme.Template,
+                            scheme.Description,
+                            scheme.OptionType);
+
+                        var url = new Url();
+                        var urlOption = command.Option(url.Template,
+                            url.Description,
+                            url.OptionType);
+
+
                         var indent = new Indent();
                         command.Option(indent.Template,
                             indent.Description,
@@ -73,7 +83,7 @@ namespace Itofinity.Bitbucket.Cli
                                 app,
                                 () =>
                                 {
-                                    var client = clientFactory.GetClient(apiTokenOption.Value());
+                                    var client = clientFactory.GetClient(urlOption.Value(), schemeOption.Value(), apiTokenOption.Value());
 
                                     var api = GetApi(client, prop);
 
