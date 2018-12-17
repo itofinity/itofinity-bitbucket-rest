@@ -42,13 +42,13 @@ after_build:
 artifacts:
   - path: '**\*$(APPVEYOR_BUILD_VERSION).nupkg'
   - path: '.\src\Itofinity.Bitbucket.Cli\bin\$(configuration)\netcoreapp2.1\win-x64\publish'
-    name: apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-win-x64
+    name: bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-win-x64
     type: zip
   - path: '.\src\Itofinity.Bitbucket.Cli\bin\$(configuration)\netcoreapp2.1\linux-x64\publish'
-    name: apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-linux-x64
+    name: bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-linux-x64
     type: zip
   - path: '.\src\Itofinity.Bitbucket.Cli\bin\$(configuration)\netcoreapp2.1\osx-x64\publish'
-    name: apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-osx-x64
+    name: bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-osx-x64
     type: zip
 
 
@@ -62,12 +62,12 @@ on_success:
   - ps : .\appveyor-tag-repository.ps1
 
 deploy:
-  release: apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)
+  release: bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)
   description: 'Bitbucket Cli Release'
   provider: GitHub
   auth_token:
     secure: /GXo1m4yXO8eIbjXBMBOVkC5d05AvG0/+03CmoHZBlsoPp3mnSwDXKLA6CpKNAs3 # your encrypted token from GitHub
-  artifact: /.*\.nupkg/ , apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-win-x64, apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-linux-x64, apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-osx-x64
+  artifact: /.*\.nupkg/ , bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-win-x64, bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-linux-x64, bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-osx-x64
   draft: false
   prerelease: FALSE
   on:
