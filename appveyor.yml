@@ -33,7 +33,7 @@ assembly_info:
 
 build_script:
   - ps: |
-      dotnet build -c release "Itofinity.Bitbucket.Rest.sln"
+      dotnet build -c release "Itofinity.Bitbucket.Refit.sln"
       dotnet pack -c release  -p:PackageVersion=$env:APPVEYOR_BUILD_VERSION
 
 after_build:
