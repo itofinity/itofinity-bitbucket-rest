@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itofinity.Bitbucket.Cli", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itofinity.Refit.Cli.Utils", "src\Itofinity.Cli.Utils\Itofinity.Refit.Cli.Utils.csproj", "{F116613F-449F-4608-9942-5E6E3E82D25E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itofinity.Bitbucket.Refit.Ext", "src\Itofinity.Bitbucket.Refit.Ext\Itofinity.Bitbucket.Refit.Ext.csproj", "{A6EC3AEF-2781-4746-BA64-9BE7D3F8B877}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		src\Itofinity.Bitbucket.Refit.Shared\Itofinity.Bitbucket.Refit.Shared.projitems*{e563b1d4-8996-4d29-b045-46d309abd843}*SharedItemsImports = 13
@@ -40,10 +38,6 @@ Global
 		{F116613F-449F-4608-9942-5E6E3E82D25E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F116613F-449F-4608-9942-5E6E3E82D25E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F116613F-449F-4608-9942-5E6E3E82D25E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A6EC3AEF-2781-4746-BA64-9BE7D3F8B877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6EC3AEF-2781-4746-BA64-9BE7D3F8B877}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6EC3AEF-2781-4746-BA64-9BE7D3F8B877}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A6EC3AEF-2781-4746-BA64-9BE7D3F8B877}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
