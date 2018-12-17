@@ -1,0 +1,60 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26621.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Itofinity.Bitbucket.Refit.Shared", "src\Itofinity.Bitbucket.Refit.Shared\Itofinity.Bitbucket.Refit.Shared.shproj", "{E563B1D4-8996-4D29-B045-46D309ABD843}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itofinity.Bitbucket.Refit", "src\Itofinity.Bitbucket.Refit\Itofinity.Bitbucket.Refit.csproj", "{15F9DCF4-97C0-4B4A-92B7-651FA4C9D5EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itofinity.Bitbucket.Refit.Test", "src\Itofinity.Bitbucket.Refit.Test\Itofinity.Bitbucket.Refit.Test.csproj", "{D0DF97B2-15CF-4774-8E8D-A0E062F6236A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0EC3839A-E8DC-48B9-87B0-CBE63F936416}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itofinity.Bitbucket.Refit.Ext", "src\Itofinity.Bitbucket.Refit.Ext\Itofinity.Bitbucket.Refit.Ext.csproj", "{55777A8C-6604-47DC-945B-3CE56F567DA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itofinity.Refit.Cli.Utils", "src\Itofinity.Cli.Utils\Itofinity.Refit.Cli.Utils.csproj", "{B8CB7BD7-C7CD-498C-A9AD-70AA69350FE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itofinity.Bitbucket.Cli", "src\Itofinity.Bitbucket.Cli\Itofinity.Bitbucket.Cli.csproj", "{80BFBDD5-9DE3-422F-9ADE-5B3DCFAF0F37}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		src\Itofinity.Bitbucket.Refit.Shared\Itofinity.Bitbucket.Refit.Shared.projitems*{e563b1d4-8996-4d29-b045-46d309abd843}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15F9DCF4-97C0-4B4A-92B7-651FA4C9D5EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F9DCF4-97C0-4B4A-92B7-651FA4C9D5EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F9DCF4-97C0-4B4A-92B7-651FA4C9D5EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F9DCF4-97C0-4B4A-92B7-651FA4C9D5EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0DF97B2-15CF-4774-8E8D-A0E062F6236A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0DF97B2-15CF-4774-8E8D-A0E062F6236A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0DF97B2-15CF-4774-8E8D-A0E062F6236A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0DF97B2-15CF-4774-8E8D-A0E062F6236A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55777A8C-6604-47DC-945B-3CE56F567DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55777A8C-6604-47DC-945B-3CE56F567DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55777A8C-6604-47DC-945B-3CE56F567DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55777A8C-6604-47DC-945B-3CE56F567DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CB7BD7-C7CD-498C-A9AD-70AA69350FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CB7BD7-C7CD-498C-A9AD-70AA69350FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CB7BD7-C7CD-498C-A9AD-70AA69350FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CB7BD7-C7CD-498C-A9AD-70AA69350FE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80BFBDD5-9DE3-422F-9ADE-5B3DCFAF0F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80BFBDD5-9DE3-422F-9ADE-5B3DCFAF0F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80BFBDD5-9DE3-422F-9ADE-5B3DCFAF0F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80BFBDD5-9DE3-422F-9ADE-5B3DCFAF0F37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F74B5F85-30FA-4FF8-9049-9F984A391C40}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55777A8C-6604-47DC-945B-3CE56F567DA3} = {0EC3839A-E8DC-48B9-87B0-CBE63F936416}
+		{B8CB7BD7-C7CD-498C-A9AD-70AA69350FE7} = {0EC3839A-E8DC-48B9-87B0-CBE63F936416}
+		{80BFBDD5-9DE3-422F-9ADE-5B3DCFAF0F37} = {0EC3839A-E8DC-48B9-87B0-CBE63F936416}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Itofinity.Bitbucket.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "--help"
+    }
+  }
+}

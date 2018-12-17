@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Bitbucket API
+
+        Code against the Bitbucket API to automate simple tasks, embed Bitbucket data into your own site, build mobile or desktop apps, or even add custom UI add-ons into Bitbucket itself using the Connect framework.
+
+    OpenAPI spec version: 2.0
+    Contact: support@bitbucket.org
+-->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+        <HasSharedItems>true</HasSharedItems>
+        <SharedGUID>{15F9DCF4-97C0-4B4A-92B7-651FA4C9D5EA}</SharedGUID>
+    </PropertyGroup>
+    <PropertyGroup Label="Configuration">
+        <Import_RootNamespace>Itofinity.Bitbucket.Refit</Import_RootNamespace>
+    </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="$(MSBuildThisFileDirectory)Client\ApiClient.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\AddonApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\BranchrestrictionsApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\CommitsApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\CommitstatusesApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\DefaultApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\DeployApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\DownloadsApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\IssueTrackerApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\ProjectsApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\PullrequestsApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\RefsApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\RepositoriesApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\SnippetApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\SnippetsApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\SourceApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\SshApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\TeamsApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\UsersApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Api\WebhooksApi.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\AccountLinks.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\CommentContent.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\CommentInline.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\CommentLinks.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\CommentLinksSelf.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\CommitFile.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\CommitstatusLinks.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Diffstat.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\EmailAddress.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\EmailAddressLinks.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Error.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\ErrorError.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\GroupLinks.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\HookEvent.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\IssueChange.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\IssueChangeChanges.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\IssueChangeChangesAssignee.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\IssueChangeLinks.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\IssueLinks.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\ModelObject.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\ModelRef.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Page.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedBranches.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedBranchrestrictions.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedCommitComments.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedCommitstatuses.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedComponents.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedDiffstats.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedEmailAddresses.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedFiles.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedHookEvents.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedIssueAttachments.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedIssueComments.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedIssues.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedLogEntries.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedMilestones.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedProjects.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedPullrequestComments.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedPullrequests.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedRefs.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedRepositories.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedRepositoryPermissions.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedSnippetComments.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedSnippetCommit.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedSnippets.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedSshUserKeys.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedTags.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedTeamPermissions.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedTeams.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedTreeentries.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedUsers.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedVersions.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PaginatedWebhookSubscriptions.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\ProjectLinks.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PullrequestEndpoint.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PullrequestEndpointBranch.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PullrequestEndpointCommit.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PullrequestLinks.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PullrequestMergeParameters.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PullrequestRendered.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\RefLinks.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\RepositoryLinks.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\RepositoryPermission.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\SnippetCommitLinks.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\SubjectTypes.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\SubjectTypesRepository.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\TeamPermission.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Treeentry.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Account.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Author.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\BaseCommit.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Branch.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Branchrestriction.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Comment.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Commitstatus.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Component.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\DeployKey.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Group.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Issue.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\IssueAttachment.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Milestone.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\ModelVersion.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Participant.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Project.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Pullrequest.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Repository.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Snippet.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\SnippetComment.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\SshKey.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Tag.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\WebhookSubscription.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Commit.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\CommitComment.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\IssueComment.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\PullrequestComment.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\SnippetCommit.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\SshAccountKey.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\Team.cs" />
+        <Compile Include="$(MSBuildThisFileDirectory)Model\User.cs" />
+    </ItemGroup>
+</Project>
