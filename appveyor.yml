@@ -1,34 +1,77 @@
-version: 0.1.{build}
-image: Visual Studio 2017 Preview
-before_build:
-- ps: >-
-  .nuget\nuget source add -source https://api.nuget.org/v3/index.json -name v3
+version: '0.1.{build}'
 
-  .nuget\nuget.exe restore
+clone_depth: 10
+
+environment:
+    GitEmail: ci@appveyor.com
+    GitAuthor: ci
+    GitUsername: mminns
+    GitPassword: 
+      secure: /GXo1m4yXO8eIbjXBMBOVkC5d05AvG0/+03CmoHZBlsoPp3mnSwDXKLA6CpKNAs3
+init:
+  - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+skip_tags: true
+
+skip_commits:
+  author: ci
+
+configuration:
+  - Release
+
+image: Visual Studio 2017
+
+before_build:
+  - dotnet restore
+
+assembly_info:
+  patch: true
+  file: SharedAssemblyInfo.cs
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}-{branch}'
+
 build_script:
-- ps: >-
-  dotnet build /p:Version=$Env:APPVEYOR_BUILD_VERSION
-test: off
+  - ps: |
+      dotnet build -c release "Itofinity.Bitbucket.Rest.sln"
+      dotnet pack -c release  -p:PackageVersion=$env:APPVEYOR_BUILD_VERSION
+
+after_build:
+  - cmd: .\utils\publish.cmd
+
 artifacts:
-- path: src\Itofinity.Bitbucket.Refit\bin\Debug\*.nupkg
-  name: Package
-#deploy:
-#- provider: NuGet
-#  api_key:
-#    secure: 12344567890 # your encrypted token from Nuget
-#  artifact: Package
-#  on:
-#    branch: master
-#    appveyor_repo_tag: true
+  - path: '**\*$(APPVEYOR_BUILD_VERSION).nupkg'
+  - path: '.\src\Itofinity.Bitbucket.Cli\bin\$(configuration)\netcoreapp2.1\win-x64\publish'
+    name: apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-win-x64
+    type: zip
+  - path: '.\src\Itofinity.Bitbucket.Cli\bin\$(configuration)\netcoreapp2.1\linux-x64\publish'
+    name: apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-linux-x64
+    type: zip
+  - path: '.\src\Itofinity.Bitbucket.Cli\bin\$(configuration)\netcoreapp2.1\osx-x64\publish'
+    name: apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-osx-x64
+    type: zip
+
+
+cache:
+  - packages -> **\packages.config
+
+matrix:
+  fast_finish: true
+
+on_success:
+  - ps : .\appveyor-tag-repository.ps1
+
 deploy:
-- provider: GitHub
-  release: Itofinity.Bitbucket.Refit-v$(appveyor_build_version)
-  description: 'Itofinity.Bitbucket.Refit Release'
+  release: apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)
+  description: 'Bitbucket Cli Release'
+  provider: GitHub
   auth_token:
-    secure: 12344567890 # your encrypted token from GitHub
-  artifact: Package            # upload all NuGet packages to release assets
+    secure: /GXo1m4yXO8eIbjXBMBOVkC5d05AvG0/+03CmoHZBlsoPp3mnSwDXKLA6CpKNAs3 # your encrypted token from GitHub
+  artifact: /.*\.nupkg/ , apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-win-x64, apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-linux-x64, apv-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-osx-x64
   draft: false
-  prerelease: false
+  prerelease: FALSE
   on:
     branch: master                 # release from master branch only
-    appveyor_repo_tag: true
+
+#on_finish:
+#  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
