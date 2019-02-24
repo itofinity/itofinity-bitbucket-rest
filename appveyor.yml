@@ -62,16 +62,21 @@ on_success:
   - ps : .\appveyor-tag-repository.ps1
 
 deploy:
-  release: bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)
-  description: 'Bitbucket Cli Release'
-  provider: GitHub
-  auth_token:
-    secure: /GXo1m4yXO8eIbjXBMBOVkC5d05AvG0/+03CmoHZBlsoPp3mnSwDXKLA6CpKNAs3 # your encrypted token from GitHub
-  artifact: /.*\.nupkg/ , bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-win-x64, bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-linux-x64, bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-osx-x64
-  draft: false
-  prerelease: FALSE
-  on:
-    branch: master                 # release from master branch only
+  - provider: GitHub
+    release: bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)
+    description: 'Bitbucket Cli Release'
+    auth_token:
+      secure: /GXo1m4yXO8eIbjXBMBOVkC5d05AvG0/+03CmoHZBlsoPp3mnSwDXKLA6CpKNAs3 # your encrypted token from GitHub
+    artifact: /.*\.nupkg/ , bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-win-x64, bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-linux-x64, bbc-cli-v$(APPVEYOR_BUILD_VERSION)-$(configuration)-osx-x64
+    draft: false
+    prerelease: FALSE
+    on:
+      branch: master                 # release from master branch only
+  - provider: NuGet
+    api_key:
+      secure: Fe8DovER/ifKSdkuY/3mRvX1nf+ZCtnJhw0i0C8LEdrdndFZO9sMsp3zMlK+cTql
+    skip_symbols: false
+    artifact: /.*\.nupkg/
 
 #on_finish:
 #  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
