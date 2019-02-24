@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Api.WebhooksApi
+# Itofinity.Bitbucket.Rest.Api.WebhooksApi
 
 All URIs are relative to *https://api.localhost:8000/2.0*
 
@@ -35,9 +35,9 @@ Returns the webhook resource or subject types on which webhooks can be registere
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -102,9 +102,9 @@ Returns a paginated list of all valid webhook events for the specified entity.  
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -173,9 +173,9 @@ Returns a paginated list of webhooks installed on this repository.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -246,9 +246,9 @@ Creates a new webhook on the specified repository.  Example:  ``` $ curl -X POST
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -319,9 +319,9 @@ Deletes the specified webhook subscription from the given repository.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -393,9 +393,9 @@ Returns the webhook with the specified id installed on the specified repository.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -468,9 +468,9 @@ Updates the specified webhook subscription.  The following properties can be mut
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -543,9 +543,9 @@ Returns a paginated list of webhooks installed on this team.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -614,9 +614,9 @@ Creates a new webhook on the specified team.  Team webhooks are fired for events
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -685,9 +685,9 @@ Deletes the specified webhook subscription from the given team account.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -757,9 +757,9 @@ Returns the webhook with the specified id installed on the given team account.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -830,9 +830,9 @@ Updates the specified webhook subscription.  The following properties can be mut
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -903,9 +903,9 @@ Returns a paginated list of webhooks installed on this user account.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -974,9 +974,9 @@ Creates a new webhook on the specified user account.  Account-level webhooks are
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -1045,9 +1045,9 @@ Deletes the specified webhook subscription from the given user account.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -1117,9 +1117,9 @@ Returns the webhook with the specified id installed on the given user account.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -1190,9 +1190,9 @@ Updates the specified webhook subscription.  The following properties can be mut
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {

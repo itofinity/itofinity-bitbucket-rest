@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.Pullrequest
+# Itofinity.Bitbucket.Rest.Model.Pullrequest
 ## Properties
 
 Name | Type | Description | Notes

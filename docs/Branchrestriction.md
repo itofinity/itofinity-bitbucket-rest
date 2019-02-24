@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.Branchrestriction
+# Itofinity.Bitbucket.Rest.Model.Branchrestriction
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Api.ProjectsApi
+# Itofinity.Bitbucket.Rest.Api.ProjectsApi
 
 All URIs are relative to *https://api.localhost:8000/2.0*
 
@@ -23,9 +23,9 @@ Method | HTTP request | Description
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -94,9 +94,9 @@ Creates a new project.  Note that the avatar has to be embedded as either a data
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -167,9 +167,9 @@ Name | Type | Description  | Notes
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -239,9 +239,9 @@ void (empty response body)
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -312,9 +312,9 @@ Since this endpoint can be used to both update and to create a project, the requ
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {

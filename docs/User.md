@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.User
+# Itofinity.Bitbucket.Rest.Model.User
 ## Properties
 
 Name | Type | Description | Notes

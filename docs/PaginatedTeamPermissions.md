@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedTeamPermissions
+# Itofinity.Bitbucket.Rest.Model.PaginatedTeamPermissions
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.IssueChange
+# Itofinity.Bitbucket.Rest.Model.IssueChange
 ## Properties
 
 Name | Type | Description | Notes

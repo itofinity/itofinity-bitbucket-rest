@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.Diffstat
+# Itofinity.Bitbucket.Rest.Model.Diffstat
 ## Properties
 
 Name | Type | Description | Notes

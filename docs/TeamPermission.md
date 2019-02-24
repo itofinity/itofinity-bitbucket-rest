@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.TeamPermission
+# Itofinity.Bitbucket.Rest.Model.TeamPermission
 ## Properties
 
 Name | Type | Description | Notes

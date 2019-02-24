@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedIssueAttachments
+# Itofinity.Bitbucket.Rest.Model.PaginatedIssueAttachments
 ## Properties
 
 Name | Type | Description | Notes

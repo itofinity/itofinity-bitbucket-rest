@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.Tag
+# Itofinity.Bitbucket.Rest.Model.Tag
 ## Properties
 
 Name | Type | Description | Notes

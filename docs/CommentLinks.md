@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.CommentLinks
+# Itofinity.Bitbucket.Rest.Model.CommentLinks
 ## Properties
 
 Name | Type | Description | Notes

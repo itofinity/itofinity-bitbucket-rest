@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Api.DownloadsApi
+# Itofinity.Bitbucket.Rest.Api.DownloadsApi
 
 All URIs are relative to *https://api.localhost:8000/2.0*
 
@@ -22,9 +22,9 @@ Deletes the specified download artifact from the repository.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -97,9 +97,9 @@ Return a redirect to the contents of a download artifact.  This endpoint returns
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -172,9 +172,9 @@ Returns a list of download links associated with the repository.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -245,9 +245,9 @@ Upload new download artifacts.  To upload files, perform a `multipart/form-data`
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {

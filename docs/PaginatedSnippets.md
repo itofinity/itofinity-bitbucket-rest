@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedSnippets
+# Itofinity.Bitbucket.Rest.Model.PaginatedSnippets
 ## Properties
 
 Name | Type | Description | Notes

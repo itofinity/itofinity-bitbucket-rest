@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.Participant
+# Itofinity.Bitbucket.Rest.Model.Participant
 ## Properties
 
 Name | Type | Description | Notes

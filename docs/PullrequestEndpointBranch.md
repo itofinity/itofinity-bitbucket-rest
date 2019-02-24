@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PullrequestEndpointBranch
+# Itofinity.Bitbucket.Rest.Model.PullrequestEndpointBranch
 ## Properties
 
 Name | Type | Description | Notes

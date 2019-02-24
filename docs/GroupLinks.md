@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.GroupLinks
+# Itofinity.Bitbucket.Rest.Model.GroupLinks
 ## Properties
 
 Name | Type | Description | Notes

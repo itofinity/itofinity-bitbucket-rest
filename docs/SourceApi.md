@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Api.SourceApi
+# Itofinity.Bitbucket.Rest.Api.SourceApi
 
 All URIs are relative to *https://api.localhost:8000/2.0*
 
@@ -22,9 +22,9 @@ Returns a paginated list of commits that modified the specified file.  Commits a
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -105,9 +105,9 @@ This endpoint redirects the client to the directory listing of the root director
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -180,9 +180,9 @@ This endpoints is used to retrieve the contents of a single file, or the content
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -263,9 +263,9 @@ This endpoint is used to create new commits in the repository by uploading files
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {

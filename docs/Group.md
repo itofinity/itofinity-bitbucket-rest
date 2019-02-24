@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.Group
+# Itofinity.Bitbucket.Rest.Model.Group
 ## Properties
 
 Name | Type | Description | Notes

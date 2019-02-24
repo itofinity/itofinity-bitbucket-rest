@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedPullrequests
+# Itofinity.Bitbucket.Rest.Model.PaginatedPullrequests
 ## Properties
 
 Name | Type | Description | Notes

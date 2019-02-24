@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.WebhookSubscription
+# Itofinity.Bitbucket.Rest.Model.WebhookSubscription
 ## Properties
 
 Name | Type | Description | Notes

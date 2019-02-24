@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.HookEvent
+# Itofinity.Bitbucket.Rest.Model.HookEvent
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.SshKey
+# Itofinity.Bitbucket.Rest.Model.SshKey
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PullrequestMergeParameters
+# Itofinity.Bitbucket.Rest.Model.PullrequestMergeParameters
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Api.BranchrestrictionsApi
+# Itofinity.Bitbucket.Rest.Api.BranchrestrictionsApi
 
 All URIs are relative to *https://api.localhost:8000/2.0*
 
@@ -23,9 +23,9 @@ Returns a paginated list of all branch restrictions on the repository.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -96,9 +96,9 @@ Deletes an existing branch restriction rule.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -170,9 +170,9 @@ Returns a specific branch restriction rule.
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -245,9 +245,9 @@ Updates an existing branch restriction rule.  Fields not present in the request 
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {
@@ -322,9 +322,9 @@ Creates a new branch restriction rule for a repository.  `kind` describes what w
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {

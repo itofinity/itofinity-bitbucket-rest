@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedLogEntries
+# Itofinity.Bitbucket.Rest.Model.PaginatedLogEntries
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.Branch
+# Itofinity.Bitbucket.Rest.Model.Branch
 ## Properties
 
 Name | Type | Description | Notes

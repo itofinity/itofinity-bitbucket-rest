@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.Treeentry
+# Itofinity.Bitbucket.Rest.Model.Treeentry
 ## Properties
 
 Name | Type | Description | Notes

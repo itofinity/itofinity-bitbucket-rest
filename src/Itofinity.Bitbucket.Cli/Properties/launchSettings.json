@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "Itofinity.Bitbucket.Cli": {
-      "commandName": "Project",
-      "commandLineArgs": "repositories-get -t bW1pbm5zOlllODJ5OVl0V1JNTVBHelBHekRZ -u https://api.bitbucket.org/2.0 -s Basic "
-    }
-  }
-}

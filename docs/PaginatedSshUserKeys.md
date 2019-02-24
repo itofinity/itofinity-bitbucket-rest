@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedSshUserKeys
+# Itofinity.Bitbucket.Rest.Model.PaginatedSshUserKeys
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.Component
+# Itofinity.Bitbucket.Rest.Model.Component
 ## Properties
 
 Name | Type | Description | Notes

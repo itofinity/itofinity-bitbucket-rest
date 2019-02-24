@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.DeployKey
+# Itofinity.Bitbucket.Rest.Model.DeployKey
 ## Properties
 
 Name | Type | Description | Notes

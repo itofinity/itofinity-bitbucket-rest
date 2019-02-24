@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.Milestone
+# Itofinity.Bitbucket.Rest.Model.Milestone
 ## Properties
 
 Name | Type | Description | Notes

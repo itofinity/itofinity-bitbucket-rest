@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.SubjectTypesRepository
+# Itofinity.Bitbucket.Rest.Model.SubjectTypesRepository
 ## Properties
 
 Name | Type | Description | Notes

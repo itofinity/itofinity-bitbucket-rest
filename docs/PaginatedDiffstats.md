@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedDiffstats
+# Itofinity.Bitbucket.Rest.Model.PaginatedDiffstats
 ## Properties
 
 Name | Type | Description | Notes

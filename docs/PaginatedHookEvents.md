@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedHookEvents
+# Itofinity.Bitbucket.Rest.Model.PaginatedHookEvents
 ## Properties
 
 Name | Type | Description | Notes

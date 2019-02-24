@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedUsers
+# Itofinity.Bitbucket.Rest.Model.PaginatedUsers
 ## Properties
 
 Name | Type | Description | Notes

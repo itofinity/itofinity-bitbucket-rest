@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.ModelVersion
+# Itofinity.Bitbucket.Rest.Model.ModelVersion
 ## Properties
 
 Name | Type | Description | Notes

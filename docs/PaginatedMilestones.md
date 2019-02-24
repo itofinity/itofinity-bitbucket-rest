@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedMilestones
+# Itofinity.Bitbucket.Rest.Model.PaginatedMilestones
 ## Properties
 
 Name | Type | Description | Notes

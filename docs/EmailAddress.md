@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.EmailAddress
+# Itofinity.Bitbucket.Rest.Model.EmailAddress
 ## Properties
 
 Name | Type | Description | Notes

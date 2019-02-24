@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.RefLinks
+# Itofinity.Bitbucket.Rest.Model.RefLinks
 ## Properties
 
 Name | Type | Description | Notes

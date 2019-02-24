@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedWebhookSubscriptions
+# Itofinity.Bitbucket.Rest.Model.PaginatedWebhookSubscriptions
 ## Properties
 
 Name | Type | Description | Notes

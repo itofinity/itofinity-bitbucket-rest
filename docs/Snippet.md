@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.Snippet
+# Itofinity.Bitbucket.Rest.Model.Snippet
 ## Properties
 
 Name | Type | Description | Notes

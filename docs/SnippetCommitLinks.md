@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.SnippetCommitLinks
+# Itofinity.Bitbucket.Rest.Model.SnippetCommitLinks
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedCommitComments
+# Itofinity.Bitbucket.Rest.Model.PaginatedCommitComments
 ## Properties
 
 Name | Type | Description | Notes

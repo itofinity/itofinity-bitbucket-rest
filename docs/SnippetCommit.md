@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.SnippetCommit
+# Itofinity.Bitbucket.Rest.Model.SnippetCommit
 ## Properties
 
 Name | Type | Description | Notes

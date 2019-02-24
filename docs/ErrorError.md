@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.ErrorError
+# Itofinity.Bitbucket.Rest.Model.ErrorError
 ## Properties
 
 Name | Type | Description | Notes

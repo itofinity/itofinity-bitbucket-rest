@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedRepositories
+# Itofinity.Bitbucket.Rest.Model.PaginatedRepositories
 ## Properties
 
 Name | Type | Description | Notes

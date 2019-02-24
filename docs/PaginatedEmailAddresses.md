@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedEmailAddresses
+# Itofinity.Bitbucket.Rest.Model.PaginatedEmailAddresses
 ## Properties
 
 Name | Type | Description | Notes

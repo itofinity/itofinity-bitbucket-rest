@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Api.SnippetApi
+# Itofinity.Bitbucket.Rest.Api.SnippetApi
 
 All URIs are relative to *https://api.localhost:8000/2.0*
 
@@ -19,9 +19,9 @@ Convenience resource for getting to a snippet's raw files without the need for f
 ```csharp
 using System;
 using System.Diagnostics;
-using Itofinity.Bitbucket.Refit.Api;
-using Itofinity.Bitbucket.Refit.Client;
-using Itofinity.Bitbucket.Refit.Model;
+using Itofinity.Bitbucket.Rest.Api;
+using Itofinity.Bitbucket.Rest.Client;
+using Itofinity.Bitbucket.Rest.Model;
 
 namespace Example
 {

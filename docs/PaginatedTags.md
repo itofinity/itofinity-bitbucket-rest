@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedTags
+# Itofinity.Bitbucket.Rest.Model.PaginatedTags
 ## Properties
 
 Name | Type | Description | Notes

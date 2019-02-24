@@ -1,4 +1,4 @@
-# Itofinity.Bitbucket.Refit.Model.PaginatedTeams
+# Itofinity.Bitbucket.Rest.Model.PaginatedTeams
 ## Properties
 
 Name | Type | Description | Notes
